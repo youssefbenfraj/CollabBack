@@ -22,7 +22,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@CrossOrigin(origins = {"http://localhost:4200", "https://086a-197-27-101-27.ngrok-free.app"}, maxAge = 3600, allowCredentials="true")
+@CrossOrigin(origins = {"*", "https://086a-197-27-101-27.ngrok-free.app"}, maxAge = 3600, allowCredentials="true")
 
 public class BookRestController {
     private IBook iBook;
