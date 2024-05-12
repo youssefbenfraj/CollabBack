@@ -31,7 +31,7 @@ import java.util.Date;
 import java.util.Map;
 @RestController
 @AllArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600, allowCredentials="true")
+@CrossOrigin(origins = "*", maxAge = 3600, allowCredentials="true")
 
 public class RevisionRestController {
     @Autowired
