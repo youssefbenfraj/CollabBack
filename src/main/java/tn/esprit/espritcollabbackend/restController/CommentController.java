@@ -12,7 +12,7 @@ import tn.esprit.espritcollabbackend.services.UserServiceIMP;
 
 import java.util.List;
 
-@CrossOrigin(origins  = {"http://localhost:4200", "https://2e97-197-31-160-181.ngrok-free.app"}, maxAge = 3600, allowCredentials="true")
+@CrossOrigin(origins  = {"*", "https://2e97-197-31-160-181.ngrok-free.app"}, maxAge = 3600, allowCredentials="true")
 @RestController
 @RequestMapping("/api")
 public class CommentController {
