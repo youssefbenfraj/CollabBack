@@ -7,5 +7,5 @@ RUN mvn package -DskipTests
 
 FROM openjdk:17
 WORKDIR /app
-COPY --from=build app/target/espritColabBackEnd.0.1.jar espritCollabBackEnd.0.1.jar
-ENTRYPOINT ["java","-jar","/app/espritCollabBackEnd.0.1.jar"]
+COPY --from=build app/target/espritColabBackEnd.1.0.jar espritCollabBackEnd.1.0.jar
+ENTRYPOINT ["java","-jar","/app/espritCollabBackEnd.1.0.jar"]
