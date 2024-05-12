@@ -49,7 +49,7 @@ public class UserRestController {
     UserRepository userRepository;
     @Autowired
     JwtUtils jwtUtils;
-    @CrossOrigin(origins  = {"http://localhost:4200", "https://2e97-197-31-160-181.ngrok-free.app"}, maxAge = 3600, allowCredentials="true")
+    @CrossOrigin(origins  = {"*", "https://2e97-197-31-160-181.ngrok-free.app"}, maxAge = 3600, allowCredentials="true")
     @PostMapping("/{userId}/deactivate")
     public ResponseEntity<String> deactivateAccount(@PathVariable long userId, @RequestParam("duration") String durationStr) {
         try {
